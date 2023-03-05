@@ -4,6 +4,33 @@ This is a React application defined on the [AWS CDK](https://docs.aws.amazon.com
 
 Your app users can sign in either directly through a user pool, or federate through a third-party identity provider (IdP). The user pool manages the overhead of handling the tokens that are returned from social sign-in through Facebook and Google. With the built-in hosted web UI, Amazon Cognito provides token handling and management for authenticated users from all IdPs. This way, your backend systems can standardize on one set of user pool tokens.
 
+The application is hosted in a S3 bucket with a CloudFront distribution in front of it.
+
+**Current Functionalities**
+
+ - Cognito sign in/sign out
+ - Allow users to sign up
+ - Cognito change/reset password
+
+### Project Structure
+
+    .
+    ├── cognito
+    |   |── cdk.ts                      # CDK construct with Cognito User Pool configuration
+    |
+    ├── react-site                      # React application
+    |   |── cdk.ts                      # CDK construct for static website configuration
+    |   |── src                         # React application code
+    |   |── packages.json               # packages for React app
+    |   |── tsconfig.json               # React TypeScript configuration
+    |   |── linters and formatters for React code (.eslintrc.json, prettierrc)  
+    |     
+    |
+    |── app.ts                          # Main CDK application (Constructs are imported here and deployed within Stacks)
+    |
+    |── CDK linters, packages and TypeScript configuration (.eslintrc.json, tsconfig.json)
+    |
+    └── ...
 
 ## Cognito with Social
 
