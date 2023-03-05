@@ -8,9 +8,9 @@ The application is hosted in a S3 bucket with a CloudFront distribution in front
 
 **Current Functionalities**
 
- - Cognito sign in/sign out
- - Allow users to sign up
- - Cognito change/reset password
+ - Cognito sign in/sign out with local or Facebook/Google users
+ - Allow users to sign up (local users)
+ - Cognito change/reset password (local users)
 
 ### Project Structure
 
