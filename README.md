@@ -130,7 +130,7 @@ https://docs.amplify.aws/lib/auth/start/q/platform/js/#note-about-oauth-configur
 
 https://docs.amplify.aws/lib/auth/social/q/platform/js/
 
-Amplify configuration on authentication context API [react-site/src/store/auth-contect.tsx].
+Amplify configuration on [authentication context API](react-site/src/store/auth-contect.tsx).
 ```
 Auth.configure({
   region: 'us-east-1',
